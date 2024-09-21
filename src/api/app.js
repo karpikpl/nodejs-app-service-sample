@@ -1,5 +1,5 @@
 const { useAzureMonitor } = require("@azure/monitor-opentelemetry");
-if(process.env.APPINSIGHTS_CONNECTION_STRING)
+if(process.env.APPLICATIONINSIGHTS_CONNECTION_STRING)
     useAzureMonitor();
 
 const express = require('express');
