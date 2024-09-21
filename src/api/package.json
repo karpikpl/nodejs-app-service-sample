@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@azure/monitor-opentelemetry": "^1.7.1",
     "express": "^4.21.0"
   }
 }

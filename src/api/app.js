@@ -1,3 +1,7 @@
+const { useAzureMonitor } = require("@azure/monitor-opentelemetry");
+if(process.env.APPINSIGHTS_CONNECTION_STRING)
+    useAzureMonitor();
+
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;

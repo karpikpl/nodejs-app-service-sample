@@ -3,6 +3,9 @@
 /**
  * Module dependencies.
  */
+const { useAzureMonitor } = require("@azure/monitor-opentelemetry");
+if(process.env.APPINSIGHTS_CONNECTION_STRING)
+  useAzureMonitor();
 
 var app = require('../app');
 var debug = require('debug')('myapp1:server');
