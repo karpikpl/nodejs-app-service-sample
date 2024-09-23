@@ -8,6 +8,7 @@ router.get('/', async function(req, res, next) {
   const url = process.env.API_URL || 'http://localhost:3000';
 
   try {
+    console.log('Calling users service at:', url);
     const response = await axios.get(`${url}/users`);
     // get users from another service
     res.send(response.data);

@@ -25,6 +25,8 @@ module api '../core/host/appservice.bicep' = {
     keyVaultName: keyVaultName
     runtimeName: 'node'
     runtimeVersion: '20-lts'
+    kind:'windows'
+    linuxFxVersion:''
     // https://learn.microsoft.com/en-us/azure/app-service/deploy-zip?tabs=cli#enable-build-automation-for-zip-deploy
     // Node.js apps must be deployed with all the required npm dependencies. 
     // The App Service deployment engine automatically runs npm install --production for you when you deploy a Git repository, 

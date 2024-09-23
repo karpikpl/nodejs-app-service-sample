@@ -82,7 +82,7 @@ module web './app/web.bicep' = {
     appServicePlanId: appServicePlan.outputs.id
     keyVaultName: keyVault.outputs.name
     appSettings: {
-      API_URI: apiUri
+      API_URL: apiUri
     }
   }
 }
@@ -114,8 +114,10 @@ module appServicePlan './core/host/appserviceplan.bicep' = {
     location: location
     tags: tags
     sku: {
-      name: 'B3'
+      name: 'B1'
     }
+    kind: 'windows'
+    reserved: false
   }
 }
 

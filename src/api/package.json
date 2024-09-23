@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node code/app.js"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,9 @@
   "dependencies": {
     "@azure/monitor-opentelemetry": "^1.7.1",
     "express": "^4.21.0"
+  },
+  "engines": {
+    "node": ">=20.x",
+    "npm": "10.x"
   }
 }

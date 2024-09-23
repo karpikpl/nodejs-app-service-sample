@@ -21,6 +21,8 @@ module web '../core/host/appservice.bicep' = {
     keyVaultName: keyVaultName
     runtimeName: 'node'
     runtimeVersion: '20-lts'
+    kind:'windows'
+    linuxFxVersion:''
     tags: union(tags, { 'azd-service-name': serviceName })
     // https://learn.microsoft.com/en-us/azure/app-service/deploy-zip?tabs=cli#enable-build-automation-for-zip-deploy
     // Node.js apps must be deployed with all the required npm dependencies. 

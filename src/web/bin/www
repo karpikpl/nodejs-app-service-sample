@@ -8,7 +8,7 @@ if(process.env.APPLICATIONINSIGHTS_CONNECTION_STRING)
   useAzureMonitor();
 
 var app = require('../app');
-var debug = require('debug')('myapp1:server');
+var debug = require('debug')('web:server');
 var http = require('http');
 
 /**
